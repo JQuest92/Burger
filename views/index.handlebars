@@ -1,14 +1,15 @@
-<h1>Burgers</h1>
-
+<h1 id="title">Burgers</h1>
+<img src="assets/img/burger.jpg" alt="Krabby Patty">
 <div class="container">
   <div class="row">
 
-		<h2>Fresh Burgers For Your Pleasure</h2>
+	
     <div class="col-md">
+				<h2>Fresh Burgers For Your Pleasure</h2>
      	<ul>
   			{{#each burgers}}
     		{{#unless devoured}}
-      	{{> burgers/burgers-block devoured=true}}
+      	{{> burgers/burger-block devoured=true}}
     		{{/unless}}
   			{{/each}}
 			</ul>
@@ -19,7 +20,7 @@
 			<ul>
   			{{#each burgers}}
     		{{#if devoured}}
-      	{{> burgers/burgers-block devoured=false}}
+      	{{> burgers/burger-block devoured=false}}
     		{{/if}}
   			{{/each}}
 			</ul>
