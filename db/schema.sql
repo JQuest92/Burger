@@ -11,3 +11,8 @@ burger_name varchar(255) NULL,
 devoured BOOL DEFAULT false,
 PRIMARY KEY (id)
 );
+
+#below is for debugging
+select * from burgers;
+
+delete from burgers where devoured = 1;
